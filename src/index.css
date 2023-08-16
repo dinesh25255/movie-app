@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.banner .swiper-button-prev,
+.banner .swiper-button-next {
+  margin-right: 15px !important;
+  margin-left: 15px !important;
+}
+
+
+.banner .swiper-button-prev::after,
+.banner .swiper-button-next::after {
+  font-size: 25px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px !important;
+}
+
+.banner .swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.banner .swiper-pagination-bullet {
+  background-color: rgb(211, 211, 211);
+}
+
+.movie-card .swiper-button-prev,
+.movie-card .swiper-button-next {
+  margin-right: 15px !important;
+}
+
+.movie-card .swiper-button-prev::after,
+.movie-card .swiper-button-next::after {
+  font-size: 30px !important;
+}
+
+
+
+.img-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.footer-img-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.banner {
+  user-select: none;
+}
+
+.active {
+  border-color: green;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  /* For mobile phones: */
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+
+}
